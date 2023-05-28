@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Love Page</title>
+</head>
+<body>
+  <h1>A Random Cute Pic of Us!! ILY</h1>
+  
+  <img id="randomImage" src="" alt="Random Image">
+
+  <script>
+    // Array of image file names (without extension)
+    var imageSet = ["img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9", "img10", "img11", "img12", "img13", "img14", "img15", "img16", "img17", "img18", "img19", "img20", "img21", "img22", "img23", "img24", "img25", "img26", "img27", "img28", "img29"];
+
+    // Get a random image from the set
+    var randomIndex = Math.floor(Math.random() * imageSet.length);
+    var randomImage = imageSet[randomIndex];
+
+    // Set the src attribute of the <img> tag to the random image
+    var imgElement = document.getElementById("randomImage");
+    imgElement.src = "images/" + randomImage + ".JPG"; // Adjust the file extension as needed
+  </script>
+</body>
+</html>
